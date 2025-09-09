@@ -1,0 +1,47 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    border: 2px solid black;
+    height: 30rem;
+    width: 30rem;
+    background-color: white;
+}
+
+.wrapper {
+    position: absolute;
+    inset: 0;
+    bottom: 110px;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%, 0);
+    font-size: 10rem;
+    line-height: 0;
+}
+
+.hole {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 2rem;
+    width: 12rem;
+    background-color: black;
+}
