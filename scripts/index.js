@@ -16,7 +16,7 @@ projects.forEach(project => {
                 <div
                     class="thumbnail-container"
                 >
-                    <img class="project-thumbnail" src='${project.imageSrc}' alt="project-thumbnail">
+                    <img class="project-thumbnail" src='./Assets/images/thumbnails/${project.image}.png' alt="project-thumbnail">
 
                 </div>
 
