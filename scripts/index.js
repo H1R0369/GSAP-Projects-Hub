@@ -1,4 +1,4 @@
-import {projects} from '../Data/projects-list.js';
+import {projects} from '../data/projects-list.js';
 
 const projectsSectionEl = document.querySelector('.projects-section');
 let projectsHTML = '';
@@ -16,7 +16,7 @@ projects.forEach(project => {
                 <div
                     class="thumbnail-container"
                 >
-                    <img class="project-thumbnail" src='./Assets/images/thumbnails/${project.image}.png' alt="project-thumbnail">
+                    <img class="project-thumbnail" src='./assets/images/thumbnails/${project.image}.png' alt="project-thumbnail">
 
                 </div>
 

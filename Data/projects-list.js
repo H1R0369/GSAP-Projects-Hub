@@ -17,7 +17,7 @@ export const projects = [
         title: 'Letter Hole Jumper',
         description: 'A simple animation of the letter H coming out of a hole that opens up and eventually closes.',
         image: 'letter-hole-jumper-thumbnail',
-        href: './Data/Projects/Letter Hole Jumper/index.html'
+        href: './data/projects/letter-hole-jumper/index.html'
     }
 
 ].map(projectDetails => {
