@@ -12,7 +12,7 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5, yoyo: true})
 
     .fromTo('h1', {
 
-        y: 175,
+        y: 180,
         scaleY: 2,
         scaleX: 0.5
 
