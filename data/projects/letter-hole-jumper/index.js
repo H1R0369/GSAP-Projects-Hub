@@ -1,4 +1,4 @@
-const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5})
+const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5, yoyo: true})
 
     .from('.hole', {
 
