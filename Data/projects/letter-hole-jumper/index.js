@@ -3,7 +3,6 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5})
     .from('.hole', {
 
         scale: 0,
-        duration: 0.5,
         repeat: 1,
         repeatDelay: 0.5,
         yoyo: true
@@ -13,21 +12,48 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5})
     .fromTo('h1', {
 
         y: 200,
-        ease: 'power3.in'
+        scaleY: 2,
+        scaleX: 0.5
 
     },
     {
 
-        y: -150
+        y: -180,
+        scaleY: 1,
+        scaleX: 1,
+        ease: 'power1'
 
-    }, '-=1')
+    }, '-=0.8')
 
     .to('h1', {
 
         y: 0,
-        duration: 0.6,
         ease: 'power3.in'
 
     }, '>')
 
-tl.timeScale(1)
+    .to('h1', {
+
+        scaleY: 0.7,
+        scaleX: 1.2,
+        transformOrigin: '50% 150%',
+        duration: 0.2,
+        repeat: 1,
+        yoyo: true
+
+    }, '>')
+
+    .to('.shadow', {
+
+        opacity: 1
+
+    }, '0.7')
+
+    .to('.shadow', {
+
+        scaleX: 0.8,
+        filter: 'blur(2px)',
+        ease: 'power3.in'
+
+    }, '>')
+

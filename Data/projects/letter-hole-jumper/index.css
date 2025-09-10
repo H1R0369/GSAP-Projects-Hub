@@ -10,7 +10,7 @@ body {
     background-color: black;
 }
 
-.container {
+.anim-container {
     position: relative;
     border: 2px solid black;
     height: 30rem;
@@ -18,7 +18,7 @@ body {
     background-color: white;
 }
 
-.wrapper {
+.letter-wrapper {
     position: absolute;
     inset: 0;
     bottom: 110px;
@@ -32,6 +32,7 @@ h1 {
     transform: translate(-50%, 0);
     font-size: 10rem;
     line-height: 0;
+    z-index: 1;
 }
 
 .hole {
@@ -44,4 +45,19 @@ h1 {
     height: 2rem;
     width: 12rem;
     background-color: black;
+}
+
+.shadow {
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 100px;
+    border-radius: 50%;
+    height: 2rem;
+    width: 12rem;
+    background-color: lightgray;
+    filter: blur(5px);
+    opacity: 0;
+
 }

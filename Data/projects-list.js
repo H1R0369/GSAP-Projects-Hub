@@ -15,7 +15,7 @@ export const projects = [
 
     {
         title: 'Letter Hole Jumper',
-        description: 'A simple animation of the letter H coming out of a hole that opens up and eventually closes.',
+        description: 'A simple animation of the letter H popping out of a hole that opens up and then closes.',
         image: 'letter-hole-jumper-thumbnail',
         href: './data/projects/letter-hole-jumper/index.html'
     }
