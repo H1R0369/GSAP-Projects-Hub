@@ -24,7 +24,7 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5, yoyo: true})
         scaleX: 1,
         ease: 'power1'
 
-    }, '>-0.9')
+    }, '>-0.85')
 
     .to('h1', {
 
