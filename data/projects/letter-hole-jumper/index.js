@@ -4,6 +4,7 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5, yoyo: true})
 
         scale: 0,
         repeat: 1,
+        duration: 0.3,
         repeatDelay: 0.5,
         yoyo: true
         
@@ -11,7 +12,7 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5, yoyo: true})
 
     .fromTo('h1', {
 
-        y: 200,
+        y: 175,
         scaleY: 2,
         scaleX: 0.5
 
@@ -23,7 +24,7 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5, yoyo: true})
         scaleX: 1,
         ease: 'power1'
 
-    }, '-=0.8')
+    }, '>-0.9')
 
     .to('h1', {
 
@@ -45,9 +46,9 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5, yoyo: true})
 
     .to('.shadow', {
 
-        opacity: 1
+        opacity: 1,
 
-    }, '0.7')
+    }, '0.3')
 
     .to('.shadow', {
 
