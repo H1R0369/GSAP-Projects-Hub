@@ -42,7 +42,7 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 0.5, yoyo: true})
         repeat: 1,
         yoyo: true
 
-    }, '>')
+    })
 
     .to('.shadow', {
 
