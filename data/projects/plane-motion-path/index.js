@@ -1,7 +1,8 @@
 const select = e => document.querySelector(e);
 const selectAll = e => document.querySelectorAll(e);
 
-const btn = select('#control-btn');
+const controlBtn = select('#control-btn');
+const revBtn = select('#reverse-btn');
 const progressEl = select('#progress');
 const timeEl = select('#time');
 
@@ -38,17 +39,11 @@ animation.eventCallback('onUpdate', function() {
 
 })
 
-btn.addEventListener('click', () => {
+controlBtn.addEventListener('click', (e) => {
+    animation.paused(!animation.paused());
+    e.target.textContent = animation.paused() ? 'play' : 'pause';
+});
 
-    if (btn.textContent === 'pause') {
-        animation.pause();
-        btn.textContent = 'play';
-    } 
-    else if (btn.textContent === 'play') {
-        animation.play();
-        btn.textContent = 'pause';
-    }
-
-
-
+revBtn.addEventListener('click', (e) => {
+    animation.reversed(!animation.reversed());
 }) 
