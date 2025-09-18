@@ -104,13 +104,11 @@ timeSlider.addEventListener('change', (e) => {
 homeEl.addEventListener('click', () => {
     anim.pause();
     gsap.to(anim, {time: 2});
-    // gsap.to(anim, {});
     anim.resume();
 })
 
 airportEl.addEventListener('click', () => {
     anim.pause();
     gsap.to(anim, {time: 3.12});
-    // gsap.to(anim, {});
     anim.resume();
 })

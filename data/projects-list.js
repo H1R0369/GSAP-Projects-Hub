@@ -15,7 +15,7 @@ export const projects = [
 
     {
         title: 'Plane Motion Path',
-        description: 'A plan following a coordinated path',
+        description: 'Interactive GSAP animation of a plane flying between home and an airport with motion path, auto-rotation, speed control, reversing, progress tracking, and point-to-click navigation',
         image: 'plane-motion-path-thumbnail',
         href: './data/projects/plane-motion-path/index.html' 
     },
