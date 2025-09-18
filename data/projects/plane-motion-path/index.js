@@ -8,23 +8,28 @@ const playbackBtn = select('#playback-btn');
 const timeSlider = select('#time-slider');
 const progressEl = select('#progress');
 const timeEl = select('#time');
+const homeEl = select('.home-img');
+const airportEl = select('.airport-img');
 
 let flipped = false;
 let currentPlayback = 1;
+
+gsap.set(homeEl, {x: 180, y: -50});
+gsap.set(airportEl, {x: -170, y: 250});
 
 const anim = gsap.to('.plane-img', {
     motionPath: {
         path: [
             {x: 250, y: 50},
             {x: 50, y: 250},
-            {x: 250, y: 350},
+            {x: 250, y: 300},
         ],
         curviness: 1,
         autoRotate: true
     },
     duration: 5,
     ease: 'power1.inOut',
-})
+});
 
 anim.eventCallback('onComplete', flipPlane, ['reverse']);
 
@@ -41,8 +46,7 @@ function flipPlane(direction) {
 
     gsap.to('.plane-img', { scaleX: flipped ? 1 : -1, duration: 0.25 });
     
-    if (flipped) {flipped = false}
-    else flipped = true;
+    flipped = flipped ? false : true;
 
     if (direction === 'reverse') {anim.reverse()}
     else anim.restart();
@@ -60,7 +64,7 @@ function resetAnim() {
 function updateTimeValues(progressValue, timeValue) {
 
     progressEl.textContent = `Progress: ${progressValue.toFixed(1)}`;
-    timeEl.textContent = `Time: ${timeValue.toFixed(1)}`
+    timeEl.textContent = `Time: ${timeValue.toFixed(2)}`
 
 };
 
@@ -97,3 +101,16 @@ timeSlider.addEventListener('change', (e) => {
     anim.resume(val);
 });
 
+homeEl.addEventListener('click', () => {
+    anim.pause();
+    gsap.to(anim, {time: 2});
+    // gsap.to(anim, {});
+    anim.resume();
+})
+
+airportEl.addEventListener('click', () => {
+    anim.pause();
+    gsap.to(anim, {time: 3.12});
+    // gsap.to(anim, {});
+    anim.resume();
+})
