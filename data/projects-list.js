@@ -14,6 +14,12 @@ class Project {
 export const projects = [
 
     {
+        title: 'Plane Motion Path',
+        description: 'A plan following a coordinated path',
+        image: 'plane-motion-path-thumbnail',
+        href: './data/projects/plane-motion-path/index.html' 
+    },
+    {
         title: 'Hover Highlight Button',
         description: 'A button that hightlights when hovered over',
         image: 'hover-highlight-button-thumbnail',

@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+body {
+    position: relative;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    height: 40rem;
+    width: 25rem;
+}
+
+.anim-wrapper {
+    flex-grow: 1;
+    border: 2px solid black;
+    background-color: skyblue;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#nav-progress-list {
+
+    padding-left: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#nav-btns-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-right: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#control-btn {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    width: 3.3rem;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+    border-radius: 3rem;
+    background-color: yellow;
+}
+
+#see-code > a {
+    padding: 0.2rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    background-color: lightgray;
+}
