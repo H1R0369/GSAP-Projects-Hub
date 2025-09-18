@@ -3,6 +3,7 @@ const selectAll = e => document.querySelectorAll(e);
 
 const controlBtn = select('#control-btn');
 const revBtn = select('#reverse-btn');
+const resBtn = select('#restart-btn');
 const progressEl = select('#progress');
 const timeEl = select('#time');
 
@@ -11,7 +12,7 @@ const animation = gsap.to('img', {
         path: [
             {x: 250, y: 50},
             {x: 50, y: 250},
-            {x: 250, y: 400},
+            {x: 250, y: 350},
         ],
         curviness: 1,
         autoRotate: true
@@ -46,4 +47,9 @@ controlBtn.addEventListener('click', (e) => {
 
 revBtn.addEventListener('click', (e) => {
     animation.reversed(!animation.reversed());
-}) 
+    e.target.textContent = animation.reversed() ? 'forward' : 'reverse';
+});
+
+resBtn.addEventListener('click', () => {
+    animation.restart();
+})
