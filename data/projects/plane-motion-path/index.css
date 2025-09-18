@@ -44,6 +44,12 @@ a {
 
 .nav {
     display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.btns-nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: gray;

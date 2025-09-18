@@ -21,19 +21,28 @@
 
         <div
             class="nav"
-        >   
-            <ul id='nav-progress-list' class="nav-list">
-                <li id="progress">Progress: 0</li>
-                <li id="time">Time: </li>
-            </ul>
-            <ul id="nav-btns-list" class="nav-list">
-                <li><button id="control-btn">pause</button></li>
-                <li><button id="reverse-btn">reverse</button></li>
-                <li><button id="restart-btn">restart</button></li>
-                <li id="see-code"> <a href="code.html"> See code </a> </li>
-            </ul>
+        >
+            <input id="time-slider" type="range" min="0" max="5" step="0.001" value="0">
 
+            <div
+                class="btns-nav"
+            >   
+                <ul id='nav-progress-list' class="nav-list">
+                    <li id="progress">Progress: 0</li>
+                    <li id="time">Time: </li>
+                </ul>
+                <ul id="nav-btns-list" class="nav-list">
+                    <li><button id="control-btn">pause</button></li>
+                    <li><button id="reverse-btn">reverse</button></li>
+                    <li><button id="restart-btn">restart</button></li>
+                    <li id="see-code"> <a href="code.html"> See code </a> </li>
+                </ul>
+
+            </div>
+            
         </div>
+
+
 
     </div>
 
