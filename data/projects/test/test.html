@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<style>
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #anim-wrapper * {
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #anim-wrapper {
+        margin-bottom: 10rem;
+    }
+
+    #first-div {
+        background-color: crimson;
+    }
+
+    #second-div {
+        background-color: salmon;
+    }
+
+    #third-div {
+        background-color: yellowgreen;
+    }
+
+</style>
+
+<body>
+    <div id="anim-wrapper" style="display: auto">
+        <h1>Hello World</h1>
+        <!-- <div id="first-div">F</div> -->
+        <!-- <div id="second-div">S</div>
+        <div id="third-div">T</div> -->
+    </div>
+
+    <button style="display: none">reset</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

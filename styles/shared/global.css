@@ -1,21 +1,17 @@
 /* ==================== GLOBAL STYLES ==================== */
 
-body {
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-normal);
-    color: var(--color-primary);
-    background-color: var(--color-black);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    gap: 10rem;
-    max-width: 1800px;
-    width: 90%;
-    margin: 5% auto;
+body {
+    visibility: hidden;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);
+    color: var(--secondary-base);
+    background-color: var(--primary-base);
 }
 
 /* ==================== COMPONENTS ==================== */
@@ -24,37 +20,5 @@ body {
 
 /* ==================== SECTIONS ==================== */
 
-header, main {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
 
 /* ---------- Navigation ---------- */
-
-.logo-name-heading {
-    width: max-content;
-    font-size: var(--text-h4);
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 5rem;
-    border: 2px solid var(--color-white);
-    padding: 3rem;
-}
-
-.nav-links-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
-
-.nav-link {
-    font-size: var(--text-base);
-    border: 2px solid var(--color-white);
-    border-radius: 1.5rem;
-    padding: 0.7rem;
-}
