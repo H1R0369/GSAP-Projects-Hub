@@ -6,7 +6,7 @@ const gs = {
 
     playEntry() {
 
-        const logoSvg = this.select('#logo-svg-container');
+        const logoSvgSticker = this.select('#logo-svg-sticker');
         const logoTxtMy = this.select('#logo-txt-my');
         const logoTxtHub = this.select('#logo-txt-hub');
         const burgerIcon = this.select('#burger-menu-icon')
@@ -15,7 +15,7 @@ const gs = {
 
         const tl = gsap.timeline({})
 
-            .from(logoSvg, {
+            .to(logoSvgSticker, {
                 width: 0, 
                 duration: 1, 
                 ease: 'power2.in'

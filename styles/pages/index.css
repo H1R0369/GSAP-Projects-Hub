@@ -8,6 +8,20 @@
     padding: 1.5rem;
 }
 
+#logo-txt-my {
+    margin-bottom: 0.7rem;
+}
+
 #logo-svg-container {
+    position: relative;
     overflow: hidden;
+}
+
+#logo-svg-sticker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-base);
 }
