@@ -27,9 +27,12 @@ const gs = {
             .from(split.chars, {
                 opacity: 0,
                 rotationY: '360deg',
-                transformPerspective: '600px',
+                transformPerspective: '400px',
+                duration: 1,
+                repeat: -1,
+                repeatDelay: 5,
                 stagger: {
-                    amount: 0.3,
+                    amount: 1,
                     ease: 'power2.in'
                 }
             })
