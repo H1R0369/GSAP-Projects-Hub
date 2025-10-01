@@ -38,8 +38,8 @@ const gs = {
             })
             .from(burgerIcon, {
                 opacity: 0,
-                duration: 1
-            })
+                duration: 3
+            }, '<+0.7')
     },
 
     displayBody() {
