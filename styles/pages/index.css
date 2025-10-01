@@ -7,3 +7,7 @@
     justify-content: space-between;
     padding: 1.5rem;
 }
+
+#logo-svg-container {
+    overflow: hidden;
+}
