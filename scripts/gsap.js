@@ -29,7 +29,7 @@ const gs = {
                 rotationY: '360deg',
                 transformPerspective: '600px',
                 stagger: {
-                    amount: 0.5,
+                    amount: 0.3,
                     ease: 'power2.in'
                 }
             })
