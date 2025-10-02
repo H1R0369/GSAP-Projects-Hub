@@ -42,8 +42,10 @@ const gs = {
                 duration: 3
             }, '<+0.5')
             .from(projects, {
-                x: window.innerWidth,
-                stagger: 0.2
+                display: 'none',
+                autoAlpha: 0,
+                stagger: 0.2,
+                duration: 3
             }, '<+0.7')
     },
 
