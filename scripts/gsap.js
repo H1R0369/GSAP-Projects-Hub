@@ -10,11 +10,11 @@ const gs = {
         const logoTxtMy = this.select('#logo-txt-my');
         const logoTxtHub = this.select('#logo-txt-hub');
         const burgerIcon = this.select('#burger-menu-icon')
-        const projects = this.select('#projects-container').querySelectorAll('.project-card');
+        const projects = this.select('#projects-container').querySelectorAll('.project-card-link');
 
         const split = new SplitText(logoTxtHub, {type: 'chars'});
 
-        const tl = gsap.timeline({})
+        const tl = gsap.timeline({paused: this.entryPlayed})
 
             .to(logoSvgSticker, {
                 width: 0, 
@@ -46,7 +46,7 @@ const gs = {
                 autoAlpha: 0,
                 stagger: 0.2,
                 duration: 3
-            }, '<+0.7')
+            }, '<+0.7');
     },
 
     displayBody() {

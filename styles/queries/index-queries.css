@@ -1,0 +1,33 @@
+@media (min-width: 576px) {
+
+    .project-card-link {
+        max-height: 600px;
+    }
+
+    .project-thumbnail {
+        max-height: 400px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    #projects-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .project-card-link {
+        width: 24%;
+        max-height: 300px;
+    }
+
+    .project-thumbnail {
+        max-height: 100px;
+    }
+
+}

@@ -11,20 +11,18 @@ function renderProjects() {
 
         projectsHTML += `
 
-            <div class="project-card">
-                <a 
-                    href=${project.href}
-                    class="project-card-link"
+            <a 
+                href="./data/projects/${project.href}"
+                class="project-card-link"
+            >
+                <img 
+                    src="./assets/images/thumbnails/${project.imageSrc}.png"
+                    class="project-thumbnail"
+                    alt="project-thumbnail"
                 >
-                    <img 
-                        src=${project.imageSrc}
-                        class="project-thumbnail"
-                        alt="project-thumbnail"
-                    >
-                    <h5 class="project-title">${project.title}</h5>
-                    <p class="project-description">${project.description}</p>
-                </a>
-            </div>
+                <h5 class="project-title">${project.title}</h5>
+                <p class="project-description">${project.description}</p>
+            </a>
         `
     });
 
