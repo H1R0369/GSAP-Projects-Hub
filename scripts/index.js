@@ -21,8 +21,8 @@ function renderProjects() {
                         class="project-thumbnail"
                         alt="project-thumbnail"
                     >
-                    <h5>${project.title}</h5>
-                    <p>${project.description}</p>
+                    <h5 class="project-title">${project.title}</h5>
+                    <p class="project-description">${project.description}</p>
                 </a>
             </div>
         `
@@ -32,7 +32,7 @@ function renderProjects() {
 }
 
 window.addEventListener('load', () => {
+    renderProjects();
     gs.displayBody();
     gs.playEntry();
-    renderProjects();
 })

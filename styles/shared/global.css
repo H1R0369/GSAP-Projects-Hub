@@ -12,6 +12,8 @@ body {
     font-weight: var(--font-weight-normal);
     color: var(--secondary-base);
     background-color: var(--primary-base);
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 /* ==================== COMPONENTS ==================== */

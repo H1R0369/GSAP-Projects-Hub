@@ -10,6 +10,7 @@ const gs = {
         const logoTxtMy = this.select('#logo-txt-my');
         const logoTxtHub = this.select('#logo-txt-hub');
         const burgerIcon = this.select('#burger-menu-icon')
+        const projects = this.select('#projects-container').querySelectorAll('.project-card');
 
         const split = new SplitText(logoTxtHub, {type: 'chars'});
 
@@ -21,8 +22,8 @@ const gs = {
                 ease: 'power2.in'
             })
             .from(logoTxtMy, {
-                y: -100,
-                ease: 'power1.in'
+                y: -window.innerHeight,
+                ease: 'power1.out'
             })
             .from(split.chars, {
                 opacity: 0,
@@ -39,6 +40,10 @@ const gs = {
             .from(burgerIcon, {
                 opacity: 0,
                 duration: 3
+            }, '<+0.5')
+            .from(projects, {
+                x: window.innerWidth,
+                stagger: 0.2
             }, '<+0.7')
     },
 
