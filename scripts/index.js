@@ -30,8 +30,34 @@ function renderProjects() {
     projectsContainer.innerHTML = projectsHTML;
 }
 
+function addListeners() {
+
+    const cards = document.querySelectorAll('.project-card-link');
+
+    if (window.innerWidth > 1024) {
+        cards.forEach(c => {
+            c.addEventListener('mouseenter', () => c.classList.add('hover'));
+            c.addEventListener('mouseleave', () => c.classList.remove('hover'));
+        });
+    } else {
+        cards.forEach(c => {
+            c.addEventListener('click', async (e) => {
+                const link = e.currentTarget.href;
+                gs.changeCardGradient(e.currentTarget);
+                e.preventDefault();
+                setTimeout(() => {
+                    window.location.href = link;
+                }, 300);
+            })
+        })
+    }
+}
+
+
+
 window.addEventListener('load', () => {
     renderProjects();
+    addListeners();
     gs.displayBody();
-    gs.playEntry();
+    // gs.playEntry();
 })

@@ -57,6 +57,7 @@ main {
     border-top: 1px solid var(--highlight);
     border-radius: 1.5rem;
     text-align: center;
+    outline-color: transparent;
     background-color: var(--bg);
     background: var(--gradient);
 }
@@ -72,4 +73,8 @@ main {
 .project-description {
     overflow: scroll;
     scrollbar-width: none;
+}
+
+.project-card-link.hover {
+    background: var(--gradient-hover);
 }

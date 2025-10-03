@@ -55,6 +55,17 @@ const gs = {
         gsap.to(body, {autoAlpha: 1});
     },
 
+    changeCardGradient(card) {
+        gsap.set(card, {
+            background: 'var(--gradient-hover)'
+        })
+        setTimeout(() => {
+            gsap.set(card, {
+                background: 'var(--gradient)'
+            })
+        }, 200);
+    },
+
     select: e => document.querySelector(e),
     selectAll: e => document.querySelectorAll(e),
 
