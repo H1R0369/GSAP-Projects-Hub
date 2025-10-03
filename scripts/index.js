@@ -60,22 +60,34 @@ function addListeners() {
 
     bulbIcon.addEventListener('click', () => {
         const body = document.body;
-        const burgerIconPath = document.querySelector('#burger-menu-icon path');
+        const burgerIcon = document.querySelector('#burger-menu-icon path');
         const bulbIconPath = document.querySelector('#bulb-icon');
+        const logoSvg = document.querySelector('#logo-svg');
+        const logoSvgDark = document.querySelector('#logo-svg-dark');
 
         body.classList.toggle('light');
-        burgerIconPath.style.fill = body.classList.contains('light') ? '#000000' : '#ffffff';
+        burgerIcon.style.fill = body.classList.contains('light') ? '#000000' : '#ffffff';
         bulbIconPath.style.fill = body.classList.contains('light') ? '#000000' : '#ffffff';
+        logoSvg.style.display = body.classList.contains('light') ? 'none' : 'inline';
+        logoSvgDark.style.display = body.classList.contains('light') ? 'inline' : 'none';
+        console.log(logoSvgDark.style.display);
+
     })
 
     // ==================== ANIMATIONS ====================
 
     const scaleUpEls = document.querySelectorAll('.gsap-scale-up');
 
-    scaleUpEls.forEach(el => {
-        el.addEventListener('mouseenter', () => gs.scaleUp(el, el.dataset.scaleMax));
-        el.addEventListener('mouseleave', () => gs.scaleDown(el));
-    })
+    if (window.innerWidth > 1024) {
+        scaleUpEls.forEach(el => {
+            el.addEventListener('mouseenter', () => gs.scaleUp(el, el.dataset.scaleMax));
+            el.addEventListener('mouseleave', () => gs.scaleDown(el));
+        })
+    } else {
+        scaleUpEls.forEach(el => {
+            el.addEventListener('click', () => gs.pop(el, el.dataset.scaleMax));
+        })
+    }
 }
 
 
