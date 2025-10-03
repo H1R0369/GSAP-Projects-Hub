@@ -32,6 +32,8 @@ function renderProjects() {
 
 function addListeners() {
 
+    // ==================== CARDS ====================
+
     const cards = document.querySelectorAll('.project-card-link');
 
     if (window.innerWidth > 1024) {
@@ -50,7 +52,30 @@ function addListeners() {
                 }, 300);
             })
         })
-    }
+    };
+
+    // ==================== ACTIONS ====================
+
+    const bulbIcon = document.querySelector('#bulb-icon');
+
+    bulbIcon.addEventListener('click', () => {
+        const body = document.body;
+        const burgerIconPath = document.querySelector('#burger-menu-icon path');
+        const bulbIconPath = document.querySelector('#bulb-icon');
+
+        body.classList.toggle('light');
+        burgerIconPath.style.fill = body.classList.contains('light') ? '#000000' : '#ffffff';
+        bulbIconPath.style.fill = body.classList.contains('light') ? '#000000' : '#ffffff';
+    })
+
+    // ==================== ANIMATIONS ====================
+
+    const scaleUpEls = document.querySelectorAll('.gsap-scale-up');
+
+    scaleUpEls.forEach(el => {
+        el.addEventListener('mouseenter', () => gs.scaleUp(el, el.dataset.scaleMax));
+        el.addEventListener('mouseleave', () => gs.scaleDown(el));
+    })
 }
 
 
@@ -59,5 +84,5 @@ window.addEventListener('load', () => {
     renderProjects();
     addListeners();
     gs.displayBody();
-    // gs.playEntry();
+    gs.playEntry();
 })

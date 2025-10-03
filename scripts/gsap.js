@@ -9,7 +9,8 @@ const gs = {
         const logoSvgSticker = this.select('#logo-svg-sticker');
         const logoTxtMy = this.select('#logo-txt-my');
         const logoTxtHub = this.select('#logo-txt-hub');
-        const burgerIcon = this.select('#burger-menu-icon')
+        const burgerIcon = this.select('#burger-menu-icon');
+        const bulbIcon = this.select('#bulb-icon');
         const projects = this.select('#projects-container').querySelectorAll('.project-card-link');
 
         const split = new SplitText(logoTxtHub, {type: 'chars'});
@@ -37,9 +38,10 @@ const gs = {
                     ease: 'power2.in'
                 }
             })
-            .from(burgerIcon, {
+            .from([burgerIcon, bulbIcon], {
                 opacity: 0,
-                duration: 3
+                duration: 3,
+                stagger: 0.2
             }, '<+0.5')
             .from(projects, {
                 display: 'none',
@@ -64,6 +66,16 @@ const gs = {
                 background: 'var(--gradient)'
             })
         }, 200);
+    },
+
+    scaleUp(element, maxScale) {
+        gsap.to(element, {
+            scale: Number(maxScale),
+        })
+    },
+
+    scaleDown(element) {
+        gsap.to(element, {scale: 1})
     },
 
     select: e => document.querySelector(e),

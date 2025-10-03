@@ -30,6 +30,12 @@ header {
     background-color: var(--bg-dark);
 }
 
+#header-nav-actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 /* ==================== MAIN ==================== */
 
 main {
@@ -60,6 +66,7 @@ main {
     outline-color: transparent;
     background-color: var(--bg);
     background: var(--gradient);
+    box-shadow: var(--shadow);
 }
 
 .project-thumbnail {
