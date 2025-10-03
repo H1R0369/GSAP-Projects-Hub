@@ -79,12 +79,16 @@ const gs = {
     },
 
     pop(element, maxScale) {
-        gsap.to(element, {
-            scale: maxScale,
-            repeat: 1,
-            duration: 0.2,
-            yoyo: true
-        })
+        gsap.fromTo(element, 
+            {
+                scale: 1,
+            }, 
+            {
+                scale: maxScale,
+                repeat: 1,
+                duration: 0.2,
+                yoyo: true
+            })
     },
 
     select: e => document.querySelector(e),
