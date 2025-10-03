@@ -96,5 +96,5 @@ window.addEventListener('load', () => {
     renderProjects();
     addListeners();
     gs.displayBody();
-    gs.playEntry();
+    // gs.playEntry();
 })

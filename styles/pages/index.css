@@ -57,7 +57,7 @@ main {
     justify-content: flex-start;
     gap: 1rem;
     width: 100%;
-    max-height: 450px;
+    height: 450px;
     padding: 1.5rem;
     border: var(--border-card);
     border-top: 1px solid var(--highlight);
@@ -70,8 +70,7 @@ main {
 }
 
 .project-thumbnail {
-    width: 100%;
-    max-height: 300px;
+    height: 300px;
     object-fit: contain;
     padding-inline: 1.5rem;
     border: 2px solid var(--grey-base);

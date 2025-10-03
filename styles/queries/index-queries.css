@@ -1,11 +1,11 @@
 @media (min-width: 576px) {
 
     .project-card-link {
-        max-height: 600px;
+        height: 600px;
     }
 
     .project-thumbnail {
-        max-height: 400px;
+        height: 400px;
     }
 
 }
@@ -18,7 +18,7 @@
         align-items: stretch;
         align-content: stretch;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .project-card-link {
