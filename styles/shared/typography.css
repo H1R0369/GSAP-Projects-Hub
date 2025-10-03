@@ -24,21 +24,22 @@
     --font-family: "Oswald", sans-serif;
 
     /* COLORS */
+
+    --bg-dark: oklch(0 0 0);
+    --bg: oklch(0.15 0 0);
+    --bg-light: oklch(0.25 0 0);
+    --text: oklch(0.95 0 0);
+    --text-muted: oklch(0.7 0 0);
+    --border: 1px solid oklch(0.3 0 0);
+    --border-card: 1px solid var(--bg);
+    --gradient: linear-gradient(0deg, var(--bg) 85%, var(--bg-light));
+    --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
+    --highlight: oklch(0.6 0 0);
+    --shadow: 0px 2px 2px oklch(0 0 0 / 0.07), 0px 4px 4px oklch(0 0 0 / 0.15);
+
     --primary-base: black;
     --primary-tint: #d0ebff;
     --primary-shade: #1c7ed6;
-
-    --secondary-base: #ffffff;
-    --secondary-tint: #efdbff;
-    --secondary-shade: #7048e8;
-
-    --tertiary-base: #ff922b;
-    --tertiary-tint: #ffe8cc;
-    --tertiary-shade: #f78707;
-
-    --grey-base: #495057;
-    --grey-tint: #f1f3f5;
-    --grey-shade: #212529;
 
     /* MISC */
     --nav-height: 100px;

@@ -15,6 +15,7 @@ function renderProjects() {
                 href="./data/projects/${project.href}"
                 class="project-card-link"
             >
+                
                 <img 
                     src="./assets/images/thumbnails/${project.imageSrc}.png"
                     class="project-thumbnail"
