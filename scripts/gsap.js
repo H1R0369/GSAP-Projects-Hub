@@ -45,7 +45,7 @@ const gs = {
                 display: 'none',
                 autoAlpha: 0,
                 stagger: 0.2,
-                duration: 3
+                duration: 2
             }, '<+0.7');
     },
 

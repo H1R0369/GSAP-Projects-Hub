@@ -8,11 +8,8 @@
 
 body {
     visibility: hidden;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-normal);
     overflow: auto;
     scrollbar-width: none;
-    color: var(--text-muted);
     background-color: var(--bg-dark);
 }
 
